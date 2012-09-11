@@ -1,6 +1,7 @@
 # Propel #
 
 test
+more text
 
 Propel is an open-source Object-Relational Mapping (ORM) for PHP5.
 
