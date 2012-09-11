@@ -208,8 +208,11 @@ abstract class BaseObject
     }
 
     /**
-     * Code to be run after deleting the object in database
-     * @param PropelPDO $con
+     * Code to be run after hydrating the object from database
+     * 
+     * @param array $row The row returned by PDOStatement->fetch(PDO::FETCH_NUM)
+     * @param int $startcol 0-based offset column which indicates which restultset column to start with.
+     * @param boolean $rehydrate Whether this object is being re-hydrated from the database.
      */
     public function postHydrate($row, $startcol = 0, $rehydrate = false)
     {
